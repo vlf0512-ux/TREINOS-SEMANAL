@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Treinos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Controle de Treinos</h1>
+
+    <select id="dia" onchange="mostrarTreino()">
+        <option value="">Selecione um dia</option>
+        <option value="segunda">Segunda</option>
+        <option value="terca">Terça</option>
+        <option value="quarta">Quarta</option>
+        <option value="quinta">Quinta</option>
+        <option value="sexta">Sexta</option>
+    </select>
+
+    <p id="mensagemInicial">
+        ⬆️ Escolha um dia da semana para montar seu treino
+    </p>
+
+    <input type="text" id="nomeExercicio" placeholder="Nome do exercício">
+    <button onclick="adicionarExercicio()">Adicionar exercício</button>
+
+    <!-- DIAS -->
+    <div id="segunda" class="diaTreino">
+        <h2>Segunda <span id="contador-segunda" class="contador"></span></h2>
+        <ul></ul>
+    </div>
+
+    <div id="terca" class="diaTreino">
+        <h2>Terça <span id="contador-terca" class="contador"></span></h2>
+        <ul></ul>
+    </div>
+
+    <div id="quarta" class="diaTreino">
+        <h2>Quarta <span id="contador-quarta" class="contador"></span></h2>
+        <ul></ul>
+    </div>
+
+    <div id="quinta" class="diaTreino">
+        <h2>Quinta <span id="contador-quinta" class="contador"></span></h2>
+        <ul></ul>
+    </div>
+
+    <div id="sexta" class="diaTreino">
+        <h2>Sexta <span id="contador-sexta" class="contador"></span></h2>
+        <ul></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
